@@ -113,13 +113,13 @@ img, svg { max-width: 100%; display: block; }
 .projects { padding: 90px 0; border-top: 1px solid var(--line); }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .project-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
-.project-thumb { height: 150px; position: relative; }
-.thumb-1 { background: linear-gradient(135deg, #123a30, #06231a); }
-.thumb-2 { background: linear-gradient(135deg, #2a1f3a, #14101f); }
-.thumb-3 { background: linear-gradient(135deg, #1a2f3a, #0a1620); }
-.thumb-4 { background: linear-gradient(135deg, #123030, #051515); }
-.thumb-5 { background: linear-gradient(135deg, #2f2712, #171205); }
-.thumb-6 { background: linear-gradient(135deg, #1f1f2f, #0c0c16); }
+.project-thumb { height: 150px; position: relative; background-size: cover; background-position: center; }
+.thumb-1 { background-color: #123a30; }
+.thumb-2 { background-color: #2a1f3a; }
+.thumb-3 { background-color: #1a2f3a; }
+.thumb-4 { background-color: #123030; }
+.thumb-5 { background-color: #2f2712; }
+.thumb-6 { background-color: #1f1f2f; }
 .project-body { padding: 22px; }
 .project-tags { display: flex; gap: 8px; margin-bottom: 12px; }
 .tag { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; background: var(--bg-soft); color: var(--ink-dim); font-weight: 700; }
@@ -135,10 +135,9 @@ img, svg { max-width: 100%; display: block; }
 .team-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
 .team-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; text-align: center; }
 .team-avatar {
-  width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 16px; background: linear-gradient(135deg, var(--mint), var(--teal));
-  display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; color: #06231a; font-size: 1.1rem;
+  width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 16px;
+  background-size: cover; background-position: center; border: 2px solid var(--mint);
 }
-.team-avatar::before { content: attr(data-initials); }
 .team-card h3 { font-size: 1rem; margin-bottom: 6px; }
 .team-role { color: var(--mint); font-size: 0.8rem; margin-bottom: 10px; }
 .team-bio { color: var(--ink-dim); font-size: 0.84rem; margin: 0; }
